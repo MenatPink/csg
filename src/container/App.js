@@ -20,7 +20,7 @@ const App = () => {
 		const requests = [];
 
 		for (var i = 0; i < 3; i++) {
-			const baseURL = `http://www.omdbapi.com/?apikey=${apikey}&s=${search}&page=${i + 1}`;
+			const baseURL = `//www.omdbapi.com/?apikey=${apikey}&s=${search}&page=${i + 1}`;
 			requests.push(
 				axios.get(baseURL).then((res) => {
 					totalDataArray.push(...res.data.Search);
